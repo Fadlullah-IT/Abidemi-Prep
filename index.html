@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abidemi Prep</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a class="logo" href="index.html"
+        ><img src="Abidemi logo.png" alt="logo"
+      /></a>
+      <ul>
+        <li><a class="signup" href="#">Sign up</a></li>
+
+        <div class="dropdown-container">
+          <button class="hamburger-btn" id="hamburgerBtn">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+          </button>
+
+          <div class="dropdown-menu" id="dropdownMenu">
+            <a href="#" class="dropdown-item">Dashboard</a>
+            <a href="#" class="dropdown-item">Profile</a>
+            <a href="#" class="dropdown-item">Settings</a>
+            <a href="#" class="dropdown-item">Help</a>
+            <a href="#" class="dropdown-item">Logout</a>
+          </div>
+        </div>
+      </ul>
+    </div>
+
+    <section class="hero-section">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <h1 class="hero-title">Find the Perfect Tutor for Your Success</h1>
+
+        <div class="search-container">
+          <div class="tabs">
+            <button class="tab" onclick="switchTab('online')">Online</button>
+            <button class="tab active" onclick="switchTab('in-person')">
+              In-Person
+            </button>
+          </div>
+
+          <form class="search-form">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Enter a subject (e.g., Mathematics, Physics, English)"
+            />
+            <select class="level-select">
+              <option>All Levels</option>
+              <option>Primary School</option>
+              <option>Secondary School</option>
+              <option>University</option>
+              <option>Professional</option>
+            </select>
+            <button type="submit" class="search-btn">🔍</button>
+          </form>
+
+          <div class="trust-indicators">
+            <div class="trust-item">
+              <div class="trust-title">Trustpilot</div>
+              <div class="stars">★★★★★</div>
+              <div class="trust-subtitle">4.7 / 5 rating</div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-title">Reviews</div>
+              <div class="stars">★★★★☆</div>
+              <div class="trust-subtitle">4.7 / 5 rating</div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-title">Verified Tutors</div>
+              <div class="trust-subtitle">1000+ Active</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="intro">
+      <h2>Who We Are</h2>
+      <p
+        class="about"
+        style="max-width: 800px; margin: auto; text-align: center"
+      >
+        AbidemiPrep is an edutech company that uses technology to make education
+        accessible, interactive and engaging for all categories of learners. As
+        an educational technology business, our primary focus is aggregating
+        professional tutors and connecting them with learners that need academic
+        support or bespoke learning programs that are specifically crafted to
+        help the learners achieve their goals.
+      </p>
+    </section>
+
+    <section id="services" class="section">
+      <h2>Services We Offer</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="Academy.jpg" alt="Academy" />
+          <h3>Academy</h3>
+          <p>
+            Physical learning centers for standardized test prep like IELTS,
+            GMAT, SAT, WAEC , NECO , JAMB and more.
+          </p>
+        </div>
+        <div class="service-card">
+          <img src="tuto marketplace.jpg" />
+          <h3>Tutor Marketplace</h3>
+          <p>
+            Hire tutors on demand from our large tutor database. Dubbed as the
+            Uber for tutoring in Africa.
+          </p>
+        </div>
+        <div class="service-card">
+          <img src="tutor uplift.jpg" />
+          <h3>Learner Tutor Upliftment</h3>
+          <p>
+            We support both learners and tutors with programs to enhance
+            learning and teaching experiences.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="section">
+      <h2>How It Works</h2>
+      <div class="features-grid">
+        <div class="feature">
+          <img src="perf tutor 2.svg" alt="Search" />
+          <h4>Search tutors</h4>
+          <p>Find tutors online or locally by subject and level.</p>
+        </div>
+        <div class="feature">
+          <img src="cv 1.svg" alt="View" />
+          <h4>View qualifications</h4>
+          <p>Check tutor profiles, experience, and feedback.</p>
+        </div>
+        <div class="feature">
+          <img src="group 2.svg" alt="Contact" />
+          <h4>Contact tutors</h4>
+          <p>Message as many tutors as you want to find the right fit.</p>
+        </div>
+        <div class="feature">
+          <img src="teacher-svgrepo-com (1).svg" alt="Select" />
+          <h4>Select & Learn</h4>
+          <p>Book your tutor and start learning right away.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="platform-features" class="section">
+      <div class="platform-features-grid">
+        <div class="platform-feature">
+          <div class="feature-icon">
+            <img src="online-icon-screen.png" alt="online-classes" />
+          </div>
+          <h4>Online Lessons</h4>
+          <p>
+            Use our whiteboard to experience live interactive tuition lessons
+            from your home.
+          </p>
+        </div>
+
+        <div class="platform-feature">
+          <div class="feature-icon">
+            <img src="online-icon-teach.png" alt="teach" />
+          </div>
+          <h4>Advanced Whiteboard</h4>
+          <p>
+            Our whiteboard allows you to have two way video, screenshare, and
+            upload documents.
+          </p>
+        </div>
+
+        <div class="platform-feature">
+          <div class="feature-icon">
+            <img src="online-icon-world.png" alt="Global" />
+          </div>
+          <h4>DBS Checked Tutors</h4>
+          <p>
+            All our tutors have an Enhanced DBS, are referenced and ID checked,
+            and have passed our onboarding process.
+          </p>
+        </div>
+
+        <div class="platform-feature">
+          <div class="feature-icon">
+            <img src="online-icon-cal.png" alt="calender" />
+          </div>
+          <h4>Manage your lessons</h4>
+          <p>
+            Manage your lessons through Abidemi Prep using our simple scheduler.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Abidemi Prep</h3>
+            <p>
+              Empowering students through personalized learning experiences.
+              Connect with qualified tutors and achieve your academic goals with
+              our innovative edtech platform.
+            </p>
+            <div class="social-icons">
+              <a href="#" class="social-icon"
+                ><img src="new iG.svg" alt="instgram"
+              /></a>
+              <a href="#" class="social-icon"
+                ><img src="twitter-svgrepo-com.svg" alt="twitter"
+              /></a>
+              <a href="#" class="social-icon"
+                ><img src="facebook-svgrepo-com.svg" alt="facebook"
+              /></a>
+              <a href="#" class="social-icon"
+                ><img src="whatsapp-svgrepo-com (1).svg" alt="whatsapp"
+              /></a>
+              <a href="#" class="social-icon"
+                ><img src="youtube-168-svgrepo-com.svg" alt="youtube"
+              /></a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h3>Our Services</h3>
+            <ul class="footer-links">
+              <li><a href="#">Online Tutoring</a></li>
+              <li><a href="#">In-Person Sessions</a></li>
+              <li><a href="#">Test Preparation</a></li>
+              <li><a href="#">Academic Support</a></li>
+              <li><a href="#">Study Groups</a></li>
+              <li><a href="#">Career Guidance</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Popular Subjects</h3>
+            <ul class="footer-links">
+              <li><a href="#">Mathematics</a></li>
+              <li><a href="#">English Language</a></li>
+              <li><a href="#">Physics</a></li>
+              <li><a href="#">Chemistry</a></li>
+              <li><a href="#">Biology</a></li>
+              <li><a href="#">Computer Science</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Stay Connected</h3>
+            <div class="contact-info">
+              <i>📞</i>
+              <span>+234 (0) 903 402 9883</span>
+            </div>
+            <div class="contact-info">
+              <i>✉️</i>
+              <span>Fadlullahbanu2018@gmal.com</span>
+            </div>
+
+            <p style="margin-top: 20px; margin-bottom: 10px">
+              Subscribe to our newsletter for updates and learning tips:
+            </p>
+            <form class="newsletter-form">
+              <input
+                type="email"
+                class="newsletter-input"
+                placeholder="Enter your email address"
+                required
+              />
+              <button type="submit" class="newsletter-btn">Subscribe</button>
+            </form>
+
+            <div class="app-downloads">
+              <a href="#" class="app-btn">
+                <span
+                  ><img
+                    width="30px"
+                    src="app-store-svgrepo-com.svg"
+                    alt="app-store"
+                /></span>
+                <div>
+                  <div style="font-size: 10px">Download on</div>
+                  <div style="font-weight: bold">App Store</div>
+                </div>
+              </a>
+              <a href="#" class="app-btn">
+                <span
+                  ><img
+                    width="30px"
+                    src="google-play-svgrepo-com.svg"
+                    alt="Google-play"
+                /></span>
+
+                <div>
+                  <div style="font-size: 10px">Get it on</div>
+                  <div style="font-weight: bold">Google Play</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+            <a href="#">Support</a>
+            <a href="#">Become a Tutor</a>
+            <a href="#">Careers</a>
+          </div>
+          <div class="copyright">
+            <p>
+              &copy; 2025 Abidemi Prep. All rights reserved. | Built by Fadlu
+              for better learning experiences
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button id="scrollTopBtn" title="Go to top" onclick="scrollToTop()">
+      <img
+        src="arrow_upward_24dp_BLACK_FILL0_wght400_GRAD0_opsz24.svg"
+        alt="Arrow"
+      />
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
